@@ -20,6 +20,8 @@ class ArticleController extends Controller
             ->load(['user', 'likes', 'tags']);
 
         return view('articles.index', ['articles' => $articles]);
+
+        
     }
 
     public function create()
